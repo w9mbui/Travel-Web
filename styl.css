@@ -1,0 +1,200 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: #223843;
+  color: black;
+  line-height: 1.6;
+}
+h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1.6rem;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  height: 100vh;
+  background: url('tre.jpg') no-repeat center/cover;
+}
+.overlay {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+}
+.hero-content {
+  position: relative;
+  z-index: 2;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #eff1f3;
+  text-align: center;
+}
+.hero-content h1 {
+  font-size: 3rem;
+}
+.hero-content p {
+  margin: 1rem 0;
+  font-size: 1.2rem;
+}
+.btn {
+  background: #d8b4a0;
+  color: black;
+  padding: 0.8rem 1.6rem;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+.btn:hover {
+  background: #30638e;
+}
+
+/* Destinations */
+.destinations {
+  padding: 4rem 2rem;
+  background: #fafafa;
+}
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+.card {
+  width: 280px;
+  border-radius: 10px;
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+.card:hover {
+  transform: translateY(-5px);
+}
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+.card .info {
+  padding: 1rem;
+}
+
+/* Why Choose Us */
+.why-us {
+  padding: 4rem 2rem;
+}
+.features {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.feature {
+  max-width: 250px;
+  text-align: center;
+}
+.feature i {
+  font-size: 2.5rem;
+  color: #28536b;
+}
+.feature h4 {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+}
+.feature p {
+  font-size: 0.95rem;
+  color: #666;
+  margin-top: 0.5rem;
+}
+
+/* Testimonials */
+.testimonials {
+  background: #f5f5f5;
+  padding: 4rem 2rem;
+}
+.testimonial-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.testimonial {
+  max-width: 320px;
+  padding: 2rem;
+  background: #fff;
+  border-left: 5px solid #ff5722;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+.testimonial.alt {
+  border-left-color: #2196f3;
+}
+.testimonial h4 {
+  margin-top: 1rem;
+  color: #555;
+}
+
+/* Newsletter */
+.newsletter {
+  padding: 3rem 2rem;
+  background: linear-gradient(/* https://grabient.com/HQVgDAjANKDMAcMwCYCcMDsA2MMvOlABYMZYtYYJVTgDTlgxUiojgJ51cmxEJeuAWBFQwQA?style=linearGradient&steps=3&angle=135 */)
+
+}
+.newsletter h2 {
+  margin-bottom: 2rem;
+}
+.newsletter form {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.newsletter input {
+  padding: 0.75rem;
+  border: none;
+  border-radius: 5px;
+  width: 280px;
+}
+.newsletter button {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  background: #fff;
+  color: #6498d4;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Footer */
+footer {
+  background: #212121;
+  color: white;
+  padding: 2rem;
+  text-align: center;
+}
+.footer-content {
+  max-width: 1000px;
+  margin: auto;
+}
+.nav-links a,
+.social a {
+  margin: 0 1rem;
+  color: white;
+  text-decoration: none;
+}
+.nav-links {
+  margin-bottom: 1rem;
+}
+.social i {
+  font-size: 1.2rem;
+}
