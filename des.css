@@ -9,9 +9,9 @@ body {
   color: black;
 }
 .navbar {
-  background-color: #223843;
+  background-color: #81BFDA;
   color: white;
-  padding: 30px 30px;
+  padding: 18px 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -20,6 +20,12 @@ body {
   font-size: 1.6rem;
   font-weight: bolder;
 }
+.top-part {
+  background-color: black;
+  color: white;
+  font-family: 'Playfair Display',serif;
+  padding: 9px 21px;
+  font-size: 15px;}
 .navbar ul {
   list-style: none;
   display: flex;
@@ -30,6 +36,10 @@ body {
   text-decoration: none;
   font-weight: 600;
 }
+
+.navbar a:hover {
+  color: #c8a66a;}
+
 .navbar ul li a.active {
   text-decoration: underline;
 }
