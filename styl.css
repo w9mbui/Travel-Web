@@ -15,7 +15,7 @@ h2 {
   margin-bottom: 1.6rem;
 }
 
-/* Hero Section */
+
 .hero {
   position: relative;
   height: 100vh;
@@ -175,26 +175,78 @@ h2 {
   cursor: pointer;
 }
 
-/* Footer */
-footer {
-  background: #212121;
-  color: white;
-  padding: 2rem;
-  text-align: center;
+.footer {
+  background-color: black;
+  padding: 30px 40px 10px;
 }
-.footer-content {
-  max-width: 1000px;
-  margin: auto;
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #222;
+  padding-bottom: 20px;
 }
-.nav-links a,
-.social a {
-  margin: 0 1rem;
+.footer-left h2 {
+  font-family: "Playfair Display", serif;
+  color: #c8a66a;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+.icons {
+  display: flex;
+  gap: 20px;
+}
+.ic {
+  background-color: #c8a66a;
   color: white;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
   text-decoration: none;
+  transition: transform 0.2s ease;
+  margin-top: 90px;
 }
-.nav-links {
-  margin-bottom: 1rem;
+.ic:hover {
+  transform: scale(1.1);
 }
-.social i {
-  font-size: 1.2rem;
+.nav-foot {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.nav-foot a {
+  color: #bcb6b6;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.3s;
+}
+.nav-foot a:hover {
+  color: #c2a875;
+}
+.nav-foot ul {
+  list-style-type: none;
+}
+.nav-foot:hover {
+  color: #c8a66a;
+}
+.footer-right {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  text-align: right;
+}
+.footer-right small {
+  color: #999;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.footer-right p {
+  margin: 4px 0 0;
+  font-size: 1rem;
+  color: #eee;
 }

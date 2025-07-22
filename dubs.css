@@ -15,9 +15,9 @@ body{
   padding: 9px 21px;
   font-size: 15px;}
 .navbar {
-  background-color: #223843;
+  background-color: black;
   color: white;
-  padding: 30px 30px;
+  padding: 18px 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -26,6 +26,12 @@ body{
   font-size: 1.6rem;
   font-weight: bolder;
 }
+.top-part {
+  background-color: black;
+  color: white;
+  font-family: 'Playfair Display',serif;
+  padding: 9px 21px;
+  font-size: 15px;}
 .navbar ul {
   list-style: none;
   display: flex;
@@ -36,6 +42,10 @@ body{
   text-decoration: none;
   font-weight: 600;
 }
+
+.navbar a:hover {
+  color: #c8a66a;}
+  
 .navbar ul li a.active {
   text-decoration: underline;
 }
@@ -137,4 +147,79 @@ h2{
 }
 .btn:hover{
     background: #5a656b;
+}
+.footer {
+  background-color: black;
+  padding: 30px 40px 10px;
+}
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #222;
+  padding-bottom: 20px;
+}
+.footer-left h2 {
+  font-family: "Playfair Display", serif;
+  color: #c8a66a;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+.icons {
+  display: flex;
+  gap: 20px;
+}
+.ic {
+  background-color: #c8a66a;
+  color: white;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  text-decoration: none;
+  transition: transform 0.2s ease;
+  margin-top: 90px;
+}
+.ic:hover {
+  transform: scale(1.1);
+}
+.nav-foot {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.nav-foot a {
+  color: #bcb6b6;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.3s;
+}
+.nav-foot a:hover {
+  color: #c2a875;
+}
+.nav-foot ul {
+  list-style-type: none;
+}
+.nav-foot:hover {
+  color: #c8a66a;
+}
+.footer-right {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  text-align: right;
+}
+.footer-right small {
+  color: #999;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.footer-right p {
+  margin: 4px 0 0;
+  font-size: 1rem;
+  color: #eee;
 }

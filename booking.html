@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookWithUs</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="book.css">
+</head>
+<body>
+    <div class="top-part">
+      <span
+        ><i class="fa fa-phone" aria-hidden="true"></i>Call To Book: +254 234
+        098 561</span
+      >
+    </div>
+    <nav class="navbar">
+      <div class="logo">CatchFlights</div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="destin.html">Destinations</a></li>
+        <li><a href="booking.html" class="active">BookWithUs</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="tipsandtricks.html">Tips&Tricks</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+    <div class="book-con">
+        <h1>Book Your Next Flight</h1>
+        <form>
+            <label for="fullname">Full Name</label>
+            <input type="text" id="fullname" required>
+
+            <label for="destination">Destination</label>
+            <select name="destination" id="destination" required>
+                <option value="">Select Your Destination</option>
+                <option value="paris">Paris,France</option>
+                <option value="tokyo">Tokya,Japan</option>
+                <option value="new york">New York,USA</option>
+                <option value="dubai">Dubai,UAE</option>
+                <option value="zermatt">Zermatt,Switzerland</option>
+                <option value="zanzibar">Zanzibar,Tanzania</option>
+            </select>
+
+            <label for="package">Package</label>
+            <select name="package" id="package">
+                <option value="">Select Your Package Deal</option>
+                <option value="3-days">3 Days Package</option>
+                <option value="5-days">5 Days Package</option>
+                <option value="7-days">7 Days Package</option>
+            </select>
+
+            <label for="travelers">Number of Travelers</label>
+            <input type="number" id="travelers" min="1" required>
+            <label for="travel-dates">Travel Dates</label>
+            <input type="text" id="travel-dates" placeholder="December 21- December 31" required></label>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" required>
+            <label for="phone">Phone Number</label>
+            <input type="number" name="phone" id="phone" required>
+
+            <label for="message">Additional Message</label>
+            <textarea name="message" id="message" rows="3" placeholder="Special Request..."></textarea>
+            <button type="submit">Submit</button>
+
+        </form>
+    </div>
+    <footer class="footer">
+      <div class="footer-top">
+        <div class="footer-left">
+          <h2>CatchFlights</h2>
+          <nav class="nav-foot">
+            <ul>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="destin.html">Destinations</a></li>
+              <li><a href="booking.html">BookWithUs</a></li>
+              <li><a href="tipsandtricks.html">Tips&Tricks</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="icons">
+          <i class="fa fa-instagram" aria-hidden="true"></i>
+          <i class="fa fa-tripadvisor" aria-hidden="true"></i>
+          <i class="fa fa-google" aria-hidden="true"></i>
+        </div>
+        <div class="footer-right">
+          <div>
+            <small>Contact Us:</small>
+            <p class="phone-num">+254 234 098 561</p>
+          </div>
+          <div>
+            <small>Email:</small>
+            <p>catchflights@gmail.com</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+</body>
+</html>

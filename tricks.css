@@ -1,78 +1,38 @@
-* {
+*{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
 }
-body {
-  font-family: "Montserrat", serif;
+body{
+  font-family: 'Montserrat', serif;
   background-color: #dddd;
   color: black;
 }
-.navbar {
-  background-color: black;
+.ti-hero{
+  text-align: center;
+  background: url(learn.jpg) center/cover no-repear;
+  padding: 50px 20px;
   color: white;
-  padding: 18px 40px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  background-blend-mode: darken;
+  background-color: rgb(0, 0,0,0.5)
 }
-.navbar .logo {
-  font-size: 1.6rem;
-  font-weight: bolder;
+.ti-hero h1{
+  font-size: 3rem;
+  margin-bottom: 10px;
 }
-.top-part {
-  background-color: black;
-  color: white;
-  font-family: 'Playfair Display',serif;
-  padding: 9px 21px;
-  font-size: 15px;}
-.navbar ul {
-  list-style: none;
-  display: flex;
-  gap: 20px;
-}
-.navbar ul li a {
-  color: white;
-  text-decoration: none;
-  font-weight: 600;
+.ti-hero p{
+  font-size: 1.2rem;
+
 }
 
-.navbar a:hover {
-  color: #c8a66a;}
-
-.navbar ul li a.active {
-  text-decoration: underline;
-}
-.des-grid {
-  margin-top: 50px;
-    display: flex;
-  justify-content: center;
-  gap: 2rem;
-  flex-wrap: wrap;
-}
-.filll {
-  padding: 2rem;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 1rem;
-  align-items: center;
-}
-.filll input {
-  flex: 1 1 250px;
-  padding: 0.7rem;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-.filll .dropdowns {
-  display: flex;
-  gap: 1rem;
-}
-.filll select {
-  padding: 2rem;
+.tr-grid{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px 1fr));
-  gap: 2rem;
+  gap: 30px;
+  padding: 35px;
+  max-width: 1200px;
+  margin: auto;
 }
 .footer {
   background-color: black;
@@ -149,36 +109,76 @@ body {
   font-size: 1rem;
   color: #eee;
 }
-.card {
-  width: 280px;
+.card{
+  background: #fff;
   border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.5);
   overflow: hidden;
-  background: white;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s;
+  transition: transform 0.1s ease;
 }
-.card:hover {
+.card:hover{
   transform: translateY(-5px);
 }
-.card img {
+.card img{
   width: 100%;
-  height: 180px;
+  height: 200px;
   object-fit: cover;
 }
-.card .card-body {
-  padding: 1rem;
+.card h3{
+  margin: 20px;
+  font-size: 1.6rem;
 }
-.card-body p {
-  font-size: 0.95rem;
-  margin-bottom: 1rem;
+.card p{
+  margin: 0 20px 20px 20px;
+  font-size: 1rem;
+  color: #555;
+}
+.card .btn{
+  display: inline-block;
+  margin: 0 20px 20px 20px;
+  padding: 10px 16px;
+  background-color: #283e43;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background 0.6s ease;
+}
+.card .btn:hover{
+  background: black;
 }
 
-.btn {
-  background: #30638e;
+.navbar {
+  background-color: black;
   color: white;
-  padding: 0.6rem 1.2rem;
-  border-radius: 5px;
-  text-decoration: none;
-  display: inline-block;
+  padding: 18px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar .logo {
+  font-size: 1.6rem;
   font-weight: bolder;
+}
+.top-part {
+  background-color: black;
+  color: white;
+  font-family: 'Playfair Display',serif;
+  padding: 9px 21px;
+  font-size: 15px;}
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+.navbar ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.navbar a:hover {
+  color: #c8a66a;}
+  
+.navbar ul li a.active {
+  text-decoration: underline;
 }
